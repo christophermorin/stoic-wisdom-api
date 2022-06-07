@@ -5,52 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./normalize.css">
+    <!-- <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css"> -->
     <title>The Ancients Way of Life</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="btnBar">
-            <div class="left btnDiv">
-                <section class="random button****">random</section>
-                <section class="marcus button">marcus</section>
-            </div>
-            <div class="right btnDiv">
-                <section class="seneca button">seneca</section>
-                <section class="epictetus button">epictetus</section>
-            </div>
-        </div>
-        <div class="quote">
-            <section>
-                <p>Random quote will go here.</p>
-            </section>
-        </div>
-    </div>
+    <h1>Stoics Quote Generator</h1>
+    <p>Docs</p>
+    <p>Please use this url: https://stoic-wisdom.herokuapp.com/</p>
 
-    <div class="docs">
-        <section>
-            <h5>Docs on random</h5>
-            '/api/random' will return a random author and quote.
-        </section>
-        <section>
-            <h5>Docs on author </h5>
-            '/api/author/:author' will return all quotes from the entered author.
-            Seneca, Marcus Aurelius, Epictetus
-        </section>
-        <section>
-            <h5>Docs on ID</h5>
-            '/api/id/:id' will return the quote attached to entered ID
-        </section>
-        <section>
-            <!-- <h5>Docs on adding quotes</h5> -->
-        </section>
-    </div>
-
-
-
-    <script type="text/javascript" src="./scripts.js"></script>
+    <h3>GET all quotes:</h3>
+    <p>/api/quotes</p>
+    <h3>GET one random quote:</h3>
+    <p>/api/random</p>
+    <h3>GET all quotes of author:</h3>
+    <p>/api/author/:author</p>
+    <h3>GET quote by ID:</h3>
+    <p>/api/id/:id</p>
 </body>
 
 </html>
+
+
+
+<!-- <div class="container">
+    <div class="btnBar">
+        <div class="left btnDiv">
+            <section class="random button****">random</section>
+            <section class="marcus button">marcus</section>
+        </div>
+        <div class="right btnDiv">
+            <section class="seneca button">seneca</section>
+            <section class="epictetus button">epictetus</section>
+        </div>
+    </div>
+    <div class="quote">
+        <section>
+            <p>Random quote will go here.</p>
+        </section>
+    </div>
+</div>
+
+<div class="docs">
+    <section>
+        <h5>Docs on random</h5>
+        '/api/random' will return a random author and quote.
+    </section>
+    <section>
+        <h5>Docs on author </h5>
+        '/api/author/:author' will return all quotes from the entered author.
+        Seneca, Marcus Aurelius, Epictetus
+    </section>
+    <section>
+        <h5>Docs on ID</h5>
+        '/api/id/:id' will return the quote attached to entered ID
+    </section>
+    <section>
+         <h5>Docs on adding quotes</h5> -->
+    <!-- </section>
+</div> -->
+
+
+
+<!-- <script type="text/javascript" src="./scripts.js"></script>  -->
