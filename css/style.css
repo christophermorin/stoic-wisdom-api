@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url('../assests/dawid-zawila-xclq1CPq1M4-unsplash(1).jpg'), #000;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    
+}
+
+
+.container{
+    min-height: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btnBar{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+    .btnDiv{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    gap: 50px;
+    }
+
+.docs{
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.quote{
+    text-align: center;
+}
