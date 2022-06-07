@@ -58,17 +58,6 @@ app.get('/api/id/:id', (request, response) => {
     
 //         response.sendStatus(204).end()
 // })
-app.post('/api/quotes', (request, response) => {
-    
-    const maxId = quotes.length > 0
-    ? Math.max(...quotes.map(n => n.id)) 
-    : 0
-
-    const quote = request.body
-    quote.id = maxId + 1
-    quotes = quotes.concat(quote)
-    response.json(quote)
-})
 
 
 
