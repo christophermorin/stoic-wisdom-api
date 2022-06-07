@@ -24,18 +24,16 @@ app.get('/api/quotes', (request, response) => {
 })
 // Gets random quote
 app.get('/api/random', (request, response) => {
-    let randomChoice = Math.ceil(Math.random() * quotes.length)
+    let randomChoice = Math.floor(Math.random() * quotes.length)
     response.json(quotes[randomChoice])
 })
 // Gets quote by Author
 app.get('/api/author/:author', (request, response) => {
     let userChoice = request.params.author.toLowerCase()
     let authorsQuotes = quotes.filter(quote => quote.author.toLowerCase() === userChoice)
-    if(authorsQuotes){
+    
         response.json(authorsQuotes)
-    }else{
-        response.sendStatus(404).end()
-    }
+    
     
 })
 // Get quote by ID
